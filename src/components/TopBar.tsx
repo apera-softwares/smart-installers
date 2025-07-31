@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  TopBarClock,
-  TopBarMail,
-  TopBarFacebook,
-  TopBarInstagram,
-  TopBarUnknown,
-} from "@/icons";
 const TopBar = () => {
   return (
     <div className="w-full  bg-[#125671] text-white">

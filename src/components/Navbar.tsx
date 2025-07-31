@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FiMenu } from "react-icons/fi";
