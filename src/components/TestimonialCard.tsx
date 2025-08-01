@@ -29,7 +29,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ data }) => {
           <img
             src={data.user.profileImgSrc}
             alt=""
-            className=" w-14 h-14 rounded-full object-center object-cover border"
+            className=" w-14 h-14 rounded-full object-center object-cover"
           />
         </div>
         <div className="flex flex-col">
