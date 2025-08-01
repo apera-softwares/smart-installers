@@ -1,4 +1,13 @@
+"use client";
 import React from "react";
+import {
+  WhyChooseUsPoint1Icon,
+  WhyChooseUsPoint2Icon,
+  WhyChooseUsPoint3Icon,
+  WhyChooseUsPoint4Icon,
+  WhyChooseUsPoint5Icon,
+  WhyChooseUsPoint6Icon,
+} from "@/icons";
 
 const WhyChooseUs = () => {
   return (
@@ -22,6 +31,8 @@ const WhyChooseUs = () => {
             <ul className=" space-y-4 mb-6">
               <li>
                 <div className="flex items-start gap-3">
+                  <WhyChooseUsPoint1Icon className="mt-1" />
+
                   <span className="text-base lg:text-lg text-text-muted">
                     NYC-Based & Fully Insured
                   </span>
@@ -29,6 +40,7 @@ const WhyChooseUs = () => {
               </li>
               <li>
                 <div className="flex items-start gap-3">
+                  <WhyChooseUsPoint2Icon className="mt-1" />
                   <span className="text-base lg:text-lg text-text-muted">
                     Trusted by Developers & Builders
                   </span>
@@ -36,6 +48,7 @@ const WhyChooseUs = () => {
               </li>
               <li>
                 <div className="flex items-start gap-3">
+                  <WhyChooseUsPoint3Icon className="mt-1" />
                   <span className="text-base lg:text-lg text-text-muted">
                     Remote Access Experts
                   </span>
@@ -43,6 +56,7 @@ const WhyChooseUs = () => {
               </li>
               <li>
                 <div className="flex items-start gap-3">
+                  <WhyChooseUsPoint4Icon className="mt-1" />
                   <span className="text-base lg:text-lg text-text-muted">
                     High-End Finishes, Fast Turnaround
                   </span>
@@ -50,6 +64,7 @@ const WhyChooseUs = () => {
               </li>
               <li>
                 <div className="flex items-start gap-3">
+                  <WhyChooseUsPoint5Icon className="mt-1" />
                   <span className="text-base lg:text-lg text-text-muted">
                     Commercial & Residential Projects
                   </span>
@@ -57,6 +72,7 @@ const WhyChooseUs = () => {
               </li>
               <li>
                 <div className="flex items-start gap-3">
+                  <WhyChooseUsPoint6Icon className="mt-1" />
                   <span className="text-base lg:text-lg text-text-muted">
                     Modern Tech. Proven Results
                   </span>
