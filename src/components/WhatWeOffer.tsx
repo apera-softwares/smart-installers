@@ -2,8 +2,8 @@ import React from "react";
 import OfferItem from "./OfferItem";
 const WhatWeOffer = () => {
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-0">
-      <div className="w-full lg:max-w-5/6 mx-auto py-12 sm:py-16 lg:py-20">
+    <section className="w-full ">
+      <div className="w-full lg:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-0 py-12 sm:py-16 lg:py-20">
         <div className="w-full flex items-center justify-between gap-6 mb-6 lg:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-text-primary">
             What We Offer
