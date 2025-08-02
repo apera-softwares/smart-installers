@@ -8,7 +8,7 @@ import { FooterFacebook, FooterTwitter, FooterYoutube } from "@/icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full px-4  pt-20 pb-5">
+    <footer className="w-full px-4 pt-12 lg:pt-20 pb-5">
       <div className="w-full bg-[#125671] rounded-4xl">
         <div className="w-full lg:max-w-5/6 px-4 sm:px-6 lg:px-0 mx-auto py-14">
           <div className="flex justify-between flex-col gap-12 lg:gap-20 lg:flex-row pb-10">

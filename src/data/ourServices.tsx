@@ -32,7 +32,7 @@ export const ourServices = [
       "Wired or wireless intercom systems with secure app-based access.",
   },
   {
-    id: "service-101",
+    id: "service-105",
     icon: <SecurityCameras />,
     service: " Home Theater & AV Systems",
     description: "24/7 surveillance, motion sensors, and real-time alerts.",
