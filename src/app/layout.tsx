@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import TopBar from "@/components/TopBar";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import TopBar from "@/components/common/TopBar";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",

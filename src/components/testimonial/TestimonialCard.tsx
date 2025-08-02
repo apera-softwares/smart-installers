@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Rating from "./Rating";
 
@@ -8,7 +9,7 @@ interface Testimonial {
   user: {
     firstName: string;
     lastName: string;
-    profession:string;
+    profession: string;
     profileImgSrc: string;
   };
 }
@@ -20,9 +21,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ data }) => {
     <div className="w-full max-w-md mx-auto  p-6 lg:p-8 border border-[#55617124] rounded-4xl">
       <div className="h-44 mb-7 pb-6 space-y-5 border-b border-[#55617124]">
         <Rating rating={data.rating} />
-        <p className="text-base ">
-          {data.review}
-        </p>
+        <p className="text-base ">{data.review}</p>
       </div>
       <div className=" h-14 flex items-center gap-7">
         <div className="">

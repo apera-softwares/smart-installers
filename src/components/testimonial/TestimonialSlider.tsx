@@ -47,7 +47,6 @@ const TestimonialSlider = () => {
 
 export default TestimonialSlider;
 
-
 const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
   <button
     className="absolute left-1/2 -bottom-20 transform -translate-x-12 z-10 w-10 h-10 flex items-center justify-center  bg-[#00101A] text-white cursor-pointer rounded-full "
@@ -65,5 +64,3 @@ const NextArrow = ({ onClick }: { onClick?: () => void }) => (
     <HiMiniArrowSmallRight className=" shrink-0 text-xl" />
   </button>
 );
-
-

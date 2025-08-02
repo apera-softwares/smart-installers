@@ -1,12 +1,11 @@
+"use client";
 import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 
 interface RatingProps {
-  rating: number; 
+  rating: number;
 }
 
-const Rating = ({
-  rating,
-}: RatingProps) => {
+const Rating = ({ rating }: RatingProps) => {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 >= 0.25 && rating % 1 < 0.75; // between .25 and .74 shows half
   const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);

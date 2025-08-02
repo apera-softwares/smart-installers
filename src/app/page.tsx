@@ -1,9 +1,9 @@
-import Hero from "@/components/Hero";
-import WhatWeOffer from "@/components/WhatWeOffer";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import OurClient from "@/components/OurClient";
-import FAQ from "@/components/FAQ";
-import Testimonial from "@/components/Testimonial";
+import Hero from "@/components/blocks/Hero";
+import WhatWeOffer from "@/components/services/WhatWeOffer";
+import WhyChooseUs from "@/components/blocks/WhyChooseUs";
+import OurClient from "@/components/our-client/OurClient";
+import FAQ from "@/components/faq/FAQ";
+import Testimonial from "@/components/testimonial/Testimonial";
 export default function Home() {
   return (
     <div className="">

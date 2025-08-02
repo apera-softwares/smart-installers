@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import FAQItem from "./FAQItem";
 import { faqs } from "@/data/faqs";

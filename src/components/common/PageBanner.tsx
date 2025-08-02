@@ -22,7 +22,7 @@ const PageBanner: React.FC<PageBannerProps> = ({
         style={{ backgroundImage: `url('${imageUrl}')` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="absolute inset-0 bg-black/20 z-0" />
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center">
