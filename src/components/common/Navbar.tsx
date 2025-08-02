@@ -11,15 +11,20 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <nav className="w-full ">
-      <div className="w-full lg:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-0 py-5  flex justify-between items-center gap-6 ">
+      <div className="w-full lg:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-0 py-5  flex justify-between items-center gap-4 sm:gap-6 ">
         <div className="">
           <Link href="/" className="flex items-center justify-center">
             <img
               src={"/assets/images/logo.png"}
               alt="Smart Installer Logo"
-              className="w-full h-full object-center object-cover"
+              className=" w-20 h-12  sm:w-24 sm:h-16 object-center object-contain"
             />
           </Link>
+        </div>
+        <div className="block lg:hidden">
+          <h2 className=" text-2xl  font-bold text-[#00101A] ">
+            Smart Installers
+          </h2>
         </div>
 
         <div className="hidden lg:flex gap-2.5">
