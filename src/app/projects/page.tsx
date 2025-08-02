@@ -1,15 +1,13 @@
 "use client";
 import React from "react";
 import PageBanner from "@/components/PageBanner";
-import WhatWeOfferAll from "@/components/WhatWeOfferAll";
-import OurClient from "@/components/OurClient";
-import FAQ from "@/components/FAQ";
+import OurProjects from "@/components/OurProjects";
 
 const Page = () => {
   const pageBannerProps = {
-    imageUrl: "/assets/images/services-page-banner.png",
-    heading: "Smart Services Built to Secure, Simplify, and Connect",
-    buttonText: "Our Services",
+    imageUrl: "/assets/images/projects-page-banner.png",
+    heading: "Smart Projects That Speak for Themselves",
+    buttonText: "Our Projects",
   };
   return (
     <div className="w-full">
@@ -18,9 +16,7 @@ const Page = () => {
         heading={pageBannerProps.heading}
         buttonText={pageBannerProps.buttonText}
       />
-      <WhatWeOfferAll />
-      <OurClient />
-      <FAQ />
+      <OurProjects />
     </div>
   );
 };
