@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ServiceCard from "@/components/ServiceCard";
+import ServiceCard from "@/components/services/ServiceCard";
 import { ourServices } from "@/data/ourServices";
 const WhatWeOfferAll = () => {
   return (
@@ -19,8 +19,6 @@ const WhatWeOfferAll = () => {
       </div>
     </div>
   );
-}
+};
 
-export default WhatWeOfferAll
-
-
+export default WhatWeOfferAll;

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import PageBanner from "@/components/PageBanner";
-import OurProjects from "@/components/OurProjects";
+import PageBanner from "@/components/common/PageBanner";
+import OurProjects from "@/components/projects/OurProjects";
 
 const Page = () => {
   const pageBannerProps = {

@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import PageBanner from "@/components/PageBanner";
-import WhatWeOfferAll from "@/components/WhatWeOfferAll";
-import OurClient from "@/components/OurClient";
-import FAQ from "@/components/FAQ";
+import PageBanner from "@/components/common/PageBanner";
+import WhatWeOfferAll from "@/components/services/WhatWeOfferAll";
+import OurClient from "@/components/our-client/OurClient";
+import FAQ from "@/components/faq/FAQ";
 
 const Page = () => {
   const pageBannerProps = {
