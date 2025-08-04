@@ -15,7 +15,8 @@ import WhyChooseUsPoint6Icon from "./why-choose-us-point-6.svg";
 import AccessControllAndIntercoms from "./access-control-and-intercoms.svg";
 import SecurityCameras from "./security-cameras.svg";
 import NewtworkingAndWiFi from "./networking-and-wifi.svg";
-import HealthInsuranceColored from "./health-insurance-colored.svg"
+import HealthInsuranceColored from "./health-insurance-colored.svg";
+import Cross from "./cross.svg"
 export {
   TopBarClock,
   TopBarMail,
@@ -34,5 +35,6 @@ export {
   AccessControllAndIntercoms,
   NewtworkingAndWiFi,
   SecurityCameras,
-  HealthInsuranceColored
+  HealthInsuranceColored,
+  Cross
 };
