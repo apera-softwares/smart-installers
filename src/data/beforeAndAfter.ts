@@ -55,8 +55,8 @@ export const beforeAndAfter = [
       },
     ],
     media: {
-      beforeImgUrl: "/assets/before-and-after/before-1.png",
-      afterImgUrl: "/assets/before-and-after/after-1.png",
+      beforeImgUrl: "/assets/before-and-after/before-2.png",
+      afterImgUrl: "/assets/before-and-after/after-2.png",
     },
   },
   {
@@ -85,8 +85,8 @@ export const beforeAndAfter = [
       },
     ],
     media: {
-      beforeImgUrl: "/assets/before-and-after/before-1.png",
-      afterImgUrl: "/assets/before-and-after/after-1.png",
+      beforeImgUrl: "/assets/before-and-after/before-3.png",
+      afterImgUrl: "/assets/before-and-after/after-3.png",
     },
   },
   {
@@ -115,8 +115,8 @@ export const beforeAndAfter = [
       },
     ],
     media: {
-      beforeImgUrl: "/assets/before-and-after/before-1.png",
-      afterImgUrl: "/assets/before-and-after/after-1.png",
+      beforeImgUrl: "/assets/before-and-after/before-4.png",
+      afterImgUrl: "/assets/before-and-after/after-4.png",
     },
   },
 ];

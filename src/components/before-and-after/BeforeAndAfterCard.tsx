@@ -26,10 +26,10 @@ const BeforeAndAfterCard: React.FC<BeforeAndAfterCardProps> = ({
   onClickViewDetails,
 }) => {
   return (
-    <div className="w-full bg-[#F9FAFB] rounded-2xl lg:rounded-[20px] p-5 sm:p-6  space-y-6">
+    <div className="w-full bg-[#F9FAFB] rounded-2xl lg:rounded-[20px] p-5 sm:p-6  space-y-6  border border-[#D0D5DD] lg:border-none ">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6  ">
         <div className="relative w-full h-full rounded-lg">
-          <span className=" absolute top-6 left-8 bg-white text-base sm:text-lg font-medium px-5 py-2.5 rounded-full">
+          <span className=" absolute top-5 sm:top-6 left-5 sm:left-8 w-24 bg-white text-base sm:text-lg text-center font-medium px-5 py-2 sm:py-2.5 rounded-full">
             Before
           </span>
           <img
@@ -39,7 +39,7 @@ const BeforeAndAfterCard: React.FC<BeforeAndAfterCardProps> = ({
           />
         </div>
         <div className="relative w-full h-full rounded-lg">
-          <span className="absolute top-6 left-8 bg-white text-base sm:text-lg font-medium px-5 py-2.5 rounded-full">
+          <span className="absolute top-5 sm:top-6 left-5 sm:left-8 w-24 bg-white text-base sm:text-lg text-center font-medium px-5 py-2 sm:py-2.5 rounded-full">
             After
           </span>
           <img
@@ -51,7 +51,7 @@ const BeforeAndAfterCard: React.FC<BeforeAndAfterCardProps> = ({
       </div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 ">
         <div className="w-full flex flex-col items-start">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2">
             {data.title || ""}
           </h2>
           <p className=" text-[#767A82] text-base lg:text-lg">{data.address}</p>
@@ -63,7 +63,9 @@ const BeforeAndAfterCard: React.FC<BeforeAndAfterCardProps> = ({
           </button>
         </div>
         <div className="w-full">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">Installation</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2">
+            Installation
+          </h2>
           <div className="w-full flex items-center flex-wrap gap-8">
             {data && data.installations.length > 0 ? (
               data.installations.map((item, index: number) => (
