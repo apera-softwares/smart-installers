@@ -8,10 +8,10 @@ import { FooterFacebook, FooterTwitter, FooterYoutube } from "@/icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full px-4 pt-12 lg:pt-20 pb-5">
-      <div className="w-full bg-[#125671] rounded-4xl">
-        <div className="w-full lg:max-w-5/6 px-4 sm:px-6 lg:px-0 mx-auto py-14">
-          <div className="flex justify-between flex-col gap-12 lg:gap-20 lg:flex-row pb-10">
+    <footer className="w-full px-2 sm:px-3 lg:px-4  pb-5">
+      <div className="w-full bg-[#125671] rounded-3xl lg:rounded-4xl">
+        <div className="w-full lg:max-w-5/6 px-4 sm:px-6 lg:px-0 mx-auto py-10 sm:py-12 lg:py-14">
+          <div className="flex justify-between flex-col gap-12 lg:gap-20 lg:flex-row pb-10  mb-5">
             <div className="flex flex-col items-center lg:items-start">
               <Link href={"/"} className="mb-5">
                 <img
@@ -19,7 +19,7 @@ const Footer = () => {
                   alt="Smart Installers Logo"
                 />
               </Link>
-              <p className=" text-white mb-12 text-center lg:text-left">
+              <p className=" text-white text-center lg:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec.
               </p>
@@ -109,7 +109,7 @@ const Footer = () => {
                 </h4>
                 <ul className="grid gap-3 text-center lg:text-left">
                   <li>
-                    <div className="flex items-center flex-nowrap gap-1.5 text-white">
+                    <div className="flex items-center justify-center md:justify-start flex-nowrap gap-1.5 text-white">
                       <FiPhoneCall className="text-lg shrink-0 mt-0.5" />
                       <span className="text-sm text-nowrap">
                         (+23)897-556-009
@@ -117,7 +117,7 @@ const Footer = () => {
                     </div>
                   </li>
                   <li>
-                    <div className="flex items-center flex-nowrap gap-1.5 text-white">
+                    <div className="flex items-center justify-center md:justify-start flex-nowrap gap-1.5 text-white">
                       <FiMail className="text-lg shrink-0 mt-0.5" />
                       <span className="text-sm text-nowrap">
                         smartex@example
@@ -125,7 +125,7 @@ const Footer = () => {
                     </div>
                   </li>
                   <li>
-                    <div className="flex items-center flex-nowrap gap-1.5 text-white">
+                    <div className="flex items-center justify-center md:justify-start flex-nowrap gap-1.5 text-white">
                       <GrLocation className="text-lg shrink-0  mt-0.5" />
                       <span className="text-sm text-nowrap">
                         {`Gianyar ST. 1190 DPS, Bali`}

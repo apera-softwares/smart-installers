@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="block lg:hidden">
-          <h2 className=" text-2xl  font-bold text-[#00101A] ">
+          <h2 className="text-xl sm:text-2xl  font-bold text-[#00101A] ">
             Smart Installers
           </h2>
         </div>
