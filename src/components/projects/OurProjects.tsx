@@ -8,7 +8,7 @@ const OurProjects = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full lg:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-0 pt-20 ">
+      <div className="w-full lg:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-0 py-20 ">
         {/* heading */}
         <div className="w-full flex flex-col items-center justify-center gap-1.5 mb-11">
           <span className="font-medium text-center">Our Projects</span>

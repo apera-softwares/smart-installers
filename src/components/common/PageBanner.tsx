@@ -12,7 +12,6 @@ const PageBanner: React.FC<PageBannerProps> = ({
   imageUrl,
   heading,
   buttonText,
-  onButtonClick,
 }) => {
   return (
     <div className="relative w-full">
