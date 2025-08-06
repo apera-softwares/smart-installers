@@ -9,9 +9,13 @@ interface ProjectCardProps {
     description: string;
     icon?: any;
   };
+  onClickViewDetails?: () => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  project,
+  onClickViewDetails,
+}) => {
   return (
     <div className="px-6 py-8 border border-[#E3E8EF] rounded-2xl">
       <div className="flex items-center justify-center mb-6">
@@ -29,7 +33,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <p className="text-center text-text-muted mb-6">
           {project.description}
         </p>
-        <button className="font-semibold underline cursor-pointer">
+        <button
+          onClick={onClickViewDetails || (() => {})}
+          className="font-semibold underline cursor-pointer"
+        >
           View Details
         </button>
       </div>

@@ -3,13 +3,13 @@ import React from "react";
 import { Modal } from "../common/Modal";
 import { IMAGE_NOT_FOUND_URL } from "@/constants/constants";
 
-interface ViewServiceDetailsModalProps {
+interface ViewProjectDetailsModalProps {
   isOpen: boolean;
   closeModal: () => void;
   data: any;
 }
 
-const ViewServiceDetailsModal: React.FC<ViewServiceDetailsModalProps> = ({
+const ViewProjectDetailsModal: React.FC<ViewProjectDetailsModalProps> = ({
   isOpen,
   closeModal,
   data,
@@ -44,4 +44,4 @@ const ViewServiceDetailsModal: React.FC<ViewServiceDetailsModalProps> = ({
   );
 };
 
-export default ViewServiceDetailsModal;
+export default ViewProjectDetailsModal;
