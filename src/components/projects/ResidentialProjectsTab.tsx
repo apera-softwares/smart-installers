@@ -9,7 +9,6 @@ import ProjectCardLoader from "./ProjectCardLoader";
 const ResidentialProjectsTab = () => {
   const [projects, setProjects] = useState<any[]>([]);
   const { loading, data } = useQuery(GET_PROJECTS);
-  console.log("loading", loading, "project", data);
 
   useEffect(() => {
     if (data) {

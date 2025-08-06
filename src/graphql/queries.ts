@@ -20,6 +20,10 @@ export const GET_PROJECTS = gql`
       id
       title
       description
+      icon {
+        id
+        url
+      }
     }
   }
 `;

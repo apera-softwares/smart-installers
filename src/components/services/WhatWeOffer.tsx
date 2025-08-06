@@ -1,13 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ourServices } from "@/data/ourServices";
+import { useQuery } from "@apollo/client";
+import { GET_SERVICES } from "@/graphql/queries";
 import ServiceCard from "./ServiceCard";
+import ServiceCardLoader from "./ServiceCardLoader";
 const WhatWeOffer = () => {
   const INITIAL_VISIBLE_SERVICE_COUNT = 3;
   const [viewAll, setViewAll] = useState<boolean>(false);
+  const [services, setServices] = useState<any[]>([]);
+  const { loading, data } = useQuery(GET_SERVICES);
+
+  useEffect(() => {
+    if (data) {
+      setServices(data?.services);
+    }
+  }, [data]);
+
   const visibleServices = viewAll
-    ? ourServices
-    : ourServices.slice(0, INITIAL_VISIBLE_SERVICE_COUNT);
+    ? services
+    : services.slice(0, INITIAL_VISIBLE_SERVICE_COUNT);
 
   const handleToggleViewAll = () => {
     setViewAll(!viewAll);
@@ -28,9 +40,19 @@ const WhatWeOffer = () => {
           </button>
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visibleServices.map((service) => (
-            <ServiceCard key={service.id} service={service} />
-          ))}
+          {loading ? (
+            <>
+              <ServiceCardLoader /> <ServiceCardLoader /> <ServiceCardLoader />
+            </>
+          ) : visibleServices && visibleServices.length > 0 ? (
+            visibleServices.map((service) => (
+              <ServiceCard key={service.id} service={service} />
+            ))
+          ) : (
+            <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
+              No Services Found
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -34,7 +34,7 @@ const WhatWeOfferAll = () => {
             ))
           ) : (
             <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
-              No Service Found
+              No Services Found
             </div>
           )}
         </div>
