@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { ourServices } from "@/data/ourServices";
+//import { ourServices } from "@/data/ourServices";
 import { useQuery } from "@apollo/client";
 import { GET_SERVICES } from "@/graphql/queries";
 import ServiceCard from "./ServiceCard";
