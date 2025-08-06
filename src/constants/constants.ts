@@ -1,0 +1,1 @@
+export const IMAGE_NOT_FOUND_URL = "/assets/images/default-service-image.jpg";

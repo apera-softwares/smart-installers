@@ -1,7 +1,5 @@
 "user client";
-import {
-  AccessControllAndIntercoms,
-} from "@/icons";
+import { AccessControllAndIntercoms } from "@/icons";
 
 import ResidentialProjectsTab from "@/components/projects/ResidentialProjectsTab";
 
@@ -10,7 +8,6 @@ interface TabItem {
   label: string;
   content: React.ReactNode;
 }
-
 
 export const ourProjectTabs: TabItem[] = [
   {
@@ -44,44 +41,43 @@ export const ourProjects = [
   {
     id: "project-101",
     icon: <AccessControllAndIntercoms />,
-    project: " Smart Office Revamp – Downtown Manhattan",
+    title: " Smart Office Revamp – Downtown Manhattan",
     description:
       "Installed commercial-grade mesh Wi-Fi, biometric door access, and 12 HD surveillance cameras.",
   },
   {
     id: "project-102",
     icon: <AccessControllAndIntercoms />,
-    project: " Smart Office Revamp – Downtown Manhattan",
+    title: " Smart Office Revamp – Downtown Manhattan",
     description:
       "Installed commercial-grade mesh Wi-Fi, biometric door access, and 12 HD surveillance cameras.",
   },
   {
     id: "project-103",
     icon: <AccessControllAndIntercoms />,
-    project: " Smart Office Revamp – Downtown Manhattan",
+    title: " Smart Office Revamp – Downtown Manhattan",
     description:
       "Installed commercial-grade mesh Wi-Fi, biometric door access, and 12 HD surveillance cameras.",
   },
   {
     id: "project-104",
     icon: <AccessControllAndIntercoms />,
-    project: " Smart Office Revamp – Downtown Manhattan",
+    title: " Smart Office Revamp – Downtown Manhattan",
     description:
       "Installed commercial-grade mesh Wi-Fi, biometric door access, and 12 HD surveillance cameras.",
   },
   {
     id: "project-105",
     icon: <AccessControllAndIntercoms />,
-    project: " Smart Office Revamp – Downtown Manhattan",
+    title: " Smart Office Revamp – Downtown Manhattan",
     description:
       "Installed commercial-grade mesh Wi-Fi, biometric door access, and 12 HD surveillance cameras.",
   },
   {
     id: "project-106",
     icon: <AccessControllAndIntercoms />,
-    project: " Smart Office Revamp – Downtown Manhattan",
+    title: " Smart Office Revamp – Downtown Manhattan",
     description:
       "Installed commercial-grade mesh Wi-Fi, biometric door access, and 12 HD surveillance cameras.",
   },
-
 ];
