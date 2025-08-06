@@ -5,10 +5,15 @@ import { useQuery } from "@apollo/client";
 import { GET_SERVICES } from "@/graphql/queries";
 import ServiceCard from "./ServiceCard";
 import ServiceCardLoader from "./ServiceCardLoader";
+import ViewServiceDetailsModal from "./ViewServiceDetailsModal";
+
 const WhatWeOffer = () => {
   const INITIAL_VISIBLE_SERVICE_COUNT = 3;
   const [viewAll, setViewAll] = useState<boolean>(false);
   const [services, setServices] = useState<any[]>([]);
+  const [selectedService, setSelectedService] = useState<any>(null);
+  const [showViewDetailsModal, setShowViewDetailsModal] =
+    useState<boolean>(false);
   const { loading, data } = useQuery(GET_SERVICES);
 
   useEffect(() => {
@@ -23,6 +28,16 @@ const WhatWeOffer = () => {
 
   const handleToggleViewAll = () => {
     setViewAll(!viewAll);
+  };
+
+  const handleShowViewDetailsModal = (service: any) => {
+    setSelectedService(service);
+    setShowViewDetailsModal(true);
+  };
+
+  const handleCloseViewDetailsModal = () => {
+    setShowViewDetailsModal(false);
+    setSelectedService(null);
   };
 
   return (
@@ -46,7 +61,11 @@ const WhatWeOffer = () => {
             </>
           ) : visibleServices && visibleServices.length > 0 ? (
             visibleServices.map((service) => (
-              <ServiceCard key={service.id} service={service} />
+              <ServiceCard
+                key={service.id}
+                service={service}
+                onClickViewDetails={() => handleShowViewDetailsModal(service)}
+              />
             ))
           ) : (
             <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
@@ -55,6 +74,11 @@ const WhatWeOffer = () => {
           )}
         </div>
       </div>
+      <ViewServiceDetailsModal
+        isOpen={showViewDetailsModal}
+        closeModal={handleCloseViewDetailsModal}
+        data={selectedService}
+      />
     </section>
   );
 };

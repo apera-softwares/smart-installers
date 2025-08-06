@@ -5,8 +5,13 @@ import { GET_SERVICES } from "@/graphql/queries";
 import ServiceCard from "@/components/services/ServiceCard";
 // import { ourServices } from "@/data/ourServices";
 import ServiceCardLoader from "./ServiceCardLoader";
+import ViewServiceDetailsModal from "./ViewServiceDetailsModal";
+
 const WhatWeOfferAll = () => {
   const [services, setServices] = useState<any[]>([]);
+   const [selectedService, setSelectedService] = useState<any>(null);
+   const [showViewDetailsModal, setShowViewDetailsModal] =
+     useState<boolean>(false);
   const { loading, data } = useQuery(GET_SERVICES);
 
   useEffect(() => {
@@ -14,6 +19,17 @@ const WhatWeOfferAll = () => {
       setServices(data.services);
     }
   }, [data]);
+
+  const handleShowViewDetailsModal = (service: any) => {
+    setSelectedService(service);
+    setShowViewDetailsModal(true);
+  };
+
+  const handleCloseViewDetailsModal = () => {
+    setShowViewDetailsModal(false);
+    setSelectedService(null);
+  };
+
 
   return (
     <div className="w-full">
@@ -30,7 +46,11 @@ const WhatWeOfferAll = () => {
             </>
           ) : services && services.length > 0 ? (
             services.map((service) => (
-              <ServiceCard key={service.id} service={service} />
+              <ServiceCard
+                key={service.id}
+                service={service}
+                onClickViewDetails={() => handleShowViewDetailsModal(service)}
+              />
             ))
           ) : (
             <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
@@ -39,6 +59,11 @@ const WhatWeOfferAll = () => {
           )}
         </div>
       </div>
+      <ViewServiceDetailsModal
+        isOpen={showViewDetailsModal}
+        closeModal={handleCloseViewDetailsModal}
+        data={selectedService}
+      />
     </div>
   );
 };
