@@ -11,7 +11,7 @@ const Page = () => {
             404
           </h2>
           <p className="text-2xl md:text-3xl font-medium">
-            Sorry, we couldn't find this page.
+            {`Sorry, we couldn't find this page.`}
           </p>
           <Link
             href="/"
