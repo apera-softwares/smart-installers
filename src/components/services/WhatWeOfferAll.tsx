@@ -6,6 +6,7 @@ import ServiceCard from "@/components/services/ServiceCard";
 // import { ourServices } from "@/data/ourServices";
 import ServiceCardLoader from "./ServiceCardLoader";
 import ViewServiceDetailsModal from "./ViewServiceDetailsModal";
+import NotFound from "../common/NotFound";
 
 const WhatWeOfferAll = () => {
   const [services, setServices] = useState<any[]>([]);
@@ -53,9 +54,7 @@ const WhatWeOfferAll = () => {
               />
             ))
           ) : (
-            <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
-              No Services Found
-            </div>
+            <NotFound message={"No Services Found"} />
           )}
         </div>
       </div>

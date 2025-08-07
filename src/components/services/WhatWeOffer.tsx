@@ -6,6 +6,7 @@ import { GET_SERVICES } from "@/graphql/queries";
 import ServiceCard from "./ServiceCard";
 import ServiceCardLoader from "./ServiceCardLoader";
 import ViewServiceDetailsModal from "./ViewServiceDetailsModal";
+import NotFound from "../common/NotFound";
 
 const WhatWeOffer = () => {
   const INITIAL_VISIBLE_SERVICE_COUNT = 3;
@@ -68,9 +69,7 @@ const WhatWeOffer = () => {
               />
             ))
           ) : (
-            <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
-              No Services Found
-            </div>
+           <NotFound message={"No Services Found"}/>
           )}
         </div>
       </div>
