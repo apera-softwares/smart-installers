@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard";
 //import { ourProjects } from "@/data/ourProjects";
 import ProjectCardLoader from "./ProjectCardLoader";
 import ViewProjectDetailsModal from "./ViewProjectDetailsModal";
+import NotFound from "../common/NotFound";
 
 const ResidentialProjectsTab = () => {
   const [projects, setProjects] = useState<any[]>([]);
@@ -45,9 +46,7 @@ const ResidentialProjectsTab = () => {
           />
         ))
       ) : (
-        <div className="col-span-1 md:col-span-2 lg:col-span-3 text-lg py-4 text-center font-bold">
-          No Project Found
-        </div>
+        <NotFound message={"No Projects Found"} />
       )}
 
       <ViewProjectDetailsModal
