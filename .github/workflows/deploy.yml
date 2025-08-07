@@ -1,9 +1,8 @@
-name: Node.js and React Project for `smart-installers` CI with Docker and SSDNode
+name: Node.js and React Project for `smart-installers-landing` CI with Docker and SSDNode
 
 on:
   push:
-    branches:
-      - "release/**"
+    branches: ["main"]
 
 jobs:
   docker-setup:
@@ -29,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: aperrasolutions/smart-installers:latest
+          tags: aperrasolutions/smart-installers-landing:latest
 
   build-and-deploy:
     needs: docker-setup
@@ -42,11 +41,8 @@ jobs:
           username: ${{ secrets.SSDNODE_USERNAME }}
           password: ${{ secrets.SSDNODE_PASSWORD }}
           script: |
-            sudo docker stop smart-installers || true
-            sudo docker rm smart-installers || true
-            sudo docker image rm aperrasolutions/smart-installers:latest || true
-            sudo docker run --name smart-installers -d -p 3045:3000 \
-              -e PORT=${{ secrets.PORT }} \
-              -e SMTP_EMAIL=${{ secrets.SMTP_EMAIL }} \
-              -e SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }} \
-              aperrasolutions/smart-installers:latest
+            sudo docker stop smart-installers-landing || true
+            sudo docker rm smart-installers-landing || true
+            sudo docker image rm aperrasolutions/smart-installers-landing:latest || true
+            sudo docker run --name smart-installers-landing -d -p 3046:3000 \
+              aperrasolutions/smart-installers-landing:latest
