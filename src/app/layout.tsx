@@ -12,8 +12,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Smart Installers",
-  description: "Smart Installer",
+  title: "Smart Installers NY",
+  description: "Smart Installers NY",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
