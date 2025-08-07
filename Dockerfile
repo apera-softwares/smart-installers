@@ -4,12 +4,6 @@ RUN apk add --no-cache openssl
 
 WORKDIR /usr/src/app
 
-ENV PORT ""
-
-ENV SMTP_EMAIL ""
-
-ENV SMTP_PASSWORD ""
-
 COPY package*.json ./
 
 RUN npm install -f
