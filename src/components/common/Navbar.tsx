@@ -42,9 +42,12 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:block">
-          <button className="inline-block bg-gray-100 border border-gray-400 text-black text-nowrap px-6 py-3 rounded-md text-lg font-semibold  cursor-pointer">
+          <Link
+            href={"/contact-us"}
+            className="inline-block bg-gray-100 border border-gray-400 text-center text-black text-nowrap px-6 py-3 rounded-md text-lg font-semibold  cursor-pointer"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
 
         <div className="lg:hidden">
@@ -75,9 +78,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <button className="mt-4 w-full bg-gray-100 border border-gray-400 text-black text-nowrap px-6 py-3 rounded-md text-lg font-semibold  cursor-pointer">
+          <Link
+            href={"/contact-us"}
+            className="mt-4 inline-block w-full text-center bg-gray-100 border border-gray-400 text-black text-nowrap px-6 py-3 rounded-md text-lg font-semibold  cursor-pointer"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       )}
     </nav>
