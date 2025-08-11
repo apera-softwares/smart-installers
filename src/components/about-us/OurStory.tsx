@@ -9,12 +9,12 @@ const OurStory = () => {
             <img
               src="/assets/images/about-us-img-1.png"
               alt=""
-              className="w-36 sm:w-48 lg:w-60 h-auto object-contain rounded-3xl "
+              className="w-36 sm:w-48 lg:w-56 h-auto object-contain rounded-3xl "
             />
             <img
               src="/assets/images/about-us-img-2.png"
               alt=""
-              className=" w-36 sm:w-48 lg:w-60 h-auto object-contain translate-y-14 rounded-3xl "
+              className=" w-36 sm:w-48 lg:w-56 h-auto object-contain translate-y-14 rounded-3xl "
             />
           </div>
           <div className="w-full flex flex-col items-center lg:items-start">

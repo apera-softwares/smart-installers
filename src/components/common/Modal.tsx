@@ -71,9 +71,9 @@ export const Modal: React.FC<ModalProps> = ({
         {showCloseButton && (
           <button
             onClick={onClose}
-            className="absolute  -top-4  -right-4 w-12 h-12 bg-white  z-999 flex  items-center justify-center rounded-full   cursor-pointer   "
+            className="absolute  -top-5 sm:-top-4 -right-2 sm:-right-4 w-12 h-12 bg-white  z-999 flex  items-center justify-center rounded-full   cursor-pointer   "
           >
-           <Cross/>
+            <Cross />
           </button>
         )}
         <div>{children}</div>
