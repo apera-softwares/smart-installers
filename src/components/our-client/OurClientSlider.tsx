@@ -32,7 +32,7 @@ const OurClienSlider = () => {
     ],
   };
   return (
-    <div className="w-full grid grid-cols-6 gap-1">
+    <div className="w-full grid grid-cols-3 lg:grid-cols-6 gap-1">
       {/* <Slider {...settings}> */}
         {ourClients.map(
           (client: { id: string; name: string; imgSrc: string }) => (
