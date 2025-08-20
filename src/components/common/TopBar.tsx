@@ -24,7 +24,7 @@ const TopBar = () => {
           <p className="flex items-center gap-2 text-nowrap">
             <TopBarMail />{" "}
             <span className="">
-              <strong>Email:</strong> info@domainname.com
+              <strong>Email:</strong> inquires@smartinstallersny.com
             </span>
           </p>
         </div>
@@ -42,7 +42,7 @@ const TopBar = () => {
           </div>
           |
           <p className=" text-nowrap">
-            <strong>Contact:</strong> +123 (456) 789
+            <strong>Contact:</strong> +1(917)516-9986
           </p>
         </div>
       </div>

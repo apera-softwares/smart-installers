@@ -19,13 +19,13 @@ const Footer = () => {
                   alt="Smart Installers Logo"
                 />
               </Link>
-              <p className=" text-white text-center lg:text-left">
+              {/* <p className=" text-white text-center lg:text-left hidden lg:block">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec.
-              </p>
+              </p> */}
             </div>
             <div className="flex flex-col md:flex-row gap-14 md:gap-20 lg:gap-14 mx-auto ">
-              <div className="">
+              <div className="hidden lg:block">
                 <h4 className="text-xl font-bold text-white mb-6 text-whie text-center lg:text-left text-nowrap">
                   Quick Link
                 </h4>
@@ -64,7 +64,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="hidden lg:block">
                 <h4 className="text-xl text-white font-bold mb-6 text-whie text-center lg:text-left text-nowrap">
                   Support
                 </h4>
@@ -112,7 +112,7 @@ const Footer = () => {
                     <div className="flex items-center justify-center md:justify-start flex-nowrap gap-1.5 text-white">
                       <FiPhoneCall className="text-lg shrink-0 mt-0.5" />
                       <span className="text-sm text-nowrap">
-                        (+23)897-556-009
+                        +1(917)516-9986
                       </span>
                     </div>
                   </li>
@@ -120,18 +120,18 @@ const Footer = () => {
                     <div className="flex items-center justify-center md:justify-start flex-nowrap gap-1.5 text-white">
                       <FiMail className="text-lg shrink-0 mt-0.5" />
                       <span className="text-sm text-nowrap">
-                        smartex@example
+                        inquires@smartinstallersny.com
                       </span>
                     </div>
                   </li>
-                  <li>
+                  {/* <li>
                     <div className="flex items-center justify-center md:justify-start flex-nowrap gap-1.5 text-white">
                       <GrLocation className="text-lg shrink-0  mt-0.5" />
                       <span className="text-sm text-nowrap">
                         {`Gianyar ST. 1190 DPS, Bali`}
                       </span>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -139,7 +139,7 @@ const Footer = () => {
           <div className=" pt-5 pb-3 border-t border-white/20">
             <div className="flex items-center justify-center flex-col md:flex-row md:justify-between gap-6">
               <span className="text-bas text-center md:text-start text-white">
-                Copyright © 2024 Smartinstaller | Powered by Smartinstaller
+                Copyright © 2025 Smartinstaller | Powered by Smartinstaller
               </span>
               <div className="flex items-center gap-1.5  sm:justify-center ">
                 <Link

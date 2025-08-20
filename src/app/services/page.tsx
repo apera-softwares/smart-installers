@@ -19,8 +19,8 @@ const Page = () => {
         buttonText={pageBannerProps.buttonText}
       />
       <WhatWeOfferAll />
-      <OurClient />
-      <FAQ />
+      {/* <OurClient />
+      <FAQ /> */}
     </div>
   );
 };

@@ -29,9 +29,9 @@ const Page = () => {
       <WhatDifferent />
       <OurApproach />
       <OurCoreValues2/>
-      <Testimonial />
+      {/* <Testimonial />
       <OurClient />
-      <FAQ />
+      <FAQ /> */}
     </div>
   );
 };

@@ -145,20 +145,20 @@ const Page = () => {
                 </span>
                 <div className="flex flex-col items-center md:items-start">
                   <span className="font-semibold">Phone Number</span>
-                  <span className="text-sm text-nowrap">(+23)897-556-009</span>
+                  <span className="text-sm text-nowrap">+1(917)516-9986</span>
                 </div>
               </div>
-              <div className=" w-60 flex flex-col md:flex-row  items-center  flex-nowrap gap-3 ">
+              <div className=" w-60 flex flex-col md:flex-row  items-center  flex-nowrap gap-3">
                 <span className="w-12 h-12 flex items-center justify-center p-2 rounded-full bg-primary text-white">
                   <FiMail className="text-lg shrink-0 mt-0.5" />
                 </span>
 
                 <div className="flex flex-col items-center md:items-start">
                   <span className="font-semibold">Email</span>
-                  <span className="text-sm text-nowrap">smartex@example</span>
+                  <span className="text-sm text-nowrap">inquires@smartinstallersny.com</span>
                 </div>
               </div>
-              <div className="  w-60 flex flex-col md:flex-row  items-center  flex-nowrap gap-3   ">
+             {/*  <div className="  w-60 flex flex-col md:flex-row  items-center  flex-nowrap gap-3   ">
                 <span className="w-12 h-12 flex items-center justify-center p-2 rounded-full bg-primary text-white">
                   <GrLocation className="text-lg shrink-0  mt-0.5" />
                 </span>
@@ -169,7 +169,7 @@ const Page = () => {
                     {`Gianyar ST. 1190 DPS, Bali`}
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="">
               <h2 className="text-lg text-center lg:text-start font-bold  mb-4">
