@@ -1,1 +1,1 @@
-export const BACKEND_API_URL = "http://209.182.232.11:3202/api/graphql";
+export const BACKEND_API_URL = "https://admin.installersny.com/api/graphql";
