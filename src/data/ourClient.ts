@@ -29,5 +29,6 @@ export const ourClients = [
     name: "",
     imgSrc: "/assets/our-client/our-client-6.png",
   },
+  
 
 ];

@@ -32,22 +32,22 @@ const OurClienSlider = () => {
     ],
   };
   return (
-    <div className="w-full">
-      <Slider {...settings}>
+    <div className="w-full grid grid-cols-6 gap-1">
+      {/* <Slider {...settings}> */}
         {ourClients.map(
           (client: { id: string; name: string; imgSrc: string }) => (
-            <div key={client.id} className=" flex flex-col items-stretch px-2 ">
-              <div className=" shrink-0 flex flex-col items-center justify-center  rounded-xl ">
+            <div key={client.id} className=" items-stretch px-1 ">
+              <div className=" items-center justify-center">
                 <img
                   src={client.imgSrc}
                   alt={`${client.name}`}
-                  className=" shrink-0 w-32 h-20 sm:w-52 sm:h-28  object-cover object-center border border-[#05588E29] rounded-xl "
+                  className="w-32 h-20 sm:w-52 sm:h-28 "
                 />
               </div>
             </div>
           )
         )}
-      </Slider>
+      {/* </Slider> */}
     </div>
   );
 };
