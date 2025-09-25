@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ApolloProviderWrapper from "@/providers/ApolloProviderWrapper";
-import TopBar from "@/components/common/TopBar";
+//import TopBar from "@/components/common/TopBar";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${plusJakarta.className} antialiased `}>
         <ApolloProviderWrapper>
           <div className="w-full">
-            <TopBar />
+            {/* <TopBar /> */}
             <Navbar />
             {children}
             <Footer />

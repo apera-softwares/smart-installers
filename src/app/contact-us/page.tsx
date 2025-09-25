@@ -140,7 +140,7 @@ const Page = () => {
             </div>
             <div className="w-full flex flex-col items-center md:flex-row lg:flex-col justify-center lg:justify-stretch lg:items-start flex-wrap gap-3 lg:gap-4 pb-6 mb-6 border-b border-gray-200">
               <div className=" w-60 flex flex-col md:flex-row  items-center  flex-nowrap gap-3">
-                <span className="w-12 h-12 flex items-center justify-center p-2 rounded-full bg-primary text-white">
+                <span className=" shrink-0 w-12 h-12 flex items-center justify-center p-2 rounded-full bg-primary text-white">
                   <FiPhoneCall className="text-lg shrink-0 mt-0.5" />
                 </span>
                 <div className="flex flex-col items-center md:items-start">
@@ -149,7 +149,7 @@ const Page = () => {
                 </div>
               </div>
               <div className=" w-60 flex flex-col md:flex-row  items-center  flex-nowrap gap-3">
-                <span className="w-12 h-12 flex items-center justify-center p-2 rounded-full bg-primary text-white">
+                <span className="shrink-0 w-12 h-12 flex items-center justify-center p-2 rounded-full bg-primary text-white">
                   <FiMail className="text-lg shrink-0 mt-0.5" />
                 </span>
 
